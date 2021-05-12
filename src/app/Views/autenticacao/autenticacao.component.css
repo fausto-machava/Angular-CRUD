@@ -1,0 +1,9 @@
+.autenticacao{
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    margin-top: 50px;
+}

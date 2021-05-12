@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -22,9 +21,17 @@ import { HttpClientModule } from '@angular/common/http';
 import {FormsModule} from '@angular/forms';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
+import {MatDialogModule} from '@angular/material/dialog';
 import { ProductReadComponent } from './components/product/product-read/product-read.component';
 import { MatTableModule } from '@angular/material/table';
 import { ProductUpdateComponent } from './components/product/product-update/product-update.component';
+import { ProductDeleteComponent } from './components/product/product-delete/product-delete.component';
+import { UserCreateComponent } from './components/utilizadores/user-create/user-create.component';
+import { UserCrudComponent } from './views/user-crud/user-crud.component';
+import { UserReadComponent } from './components/utilizadores/user-read/user-read.component';
+import { LoginComponent } from './components/conta/login/login.component';
+import { PrincipalComponent } from './components/principal/principal.component';
+import { AutenticacaoComponent } from './views/autenticacao/autenticacao.component';
 
 
 @NgModule({
@@ -39,7 +46,14 @@ import { ProductUpdateComponent } from './components/product/product-update/prod
     ForDirective,
     ProductCreateComponent,
     ProductReadComponent,
-    ProductUpdateComponent
+    ProductUpdateComponent,
+    ProductDeleteComponent,
+    UserCreateComponent,
+    UserCrudComponent,
+    UserReadComponent,
+    LoginComponent,
+    PrincipalComponent,
+    AutenticacaoComponent
   ],
   imports: [
     BrowserModule,
@@ -55,7 +69,8 @@ import { ProductUpdateComponent } from './components/product/product-update/prod
     FormsModule,
     MatFormFieldModule,
     MatInputModule,
-    MatTableModule
+    MatTableModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]

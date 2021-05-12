@@ -1,0 +1,16 @@
+<div>
+    <mat-card class = "groupForm">
+        <mat-toolbar color="primary" class="tool">Pagina de Login</mat-toolbar>
+        <form (formGroup) = "form" class="form" (submit) = "fazerLogin()">
+            <mat-form-field class="inputs">
+                <input formControlName = "Nome" matInput placeholder="Nome" name="Nome">
+            </mat-form-field>
+            <mat-form-field class="inputs">
+                <input formControlName="Password" type="password" matInput placeholder="Password" name="password">
+            </mat-form-field>
+            <button type="submit" mat-raised-button (click)="fazerLogin()" color="primary">
+                Login
+            </button>
+        </form>
+    </mat-card>
+</div>

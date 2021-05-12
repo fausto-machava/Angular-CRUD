@@ -2,10 +2,10 @@
     <mat-card-title>Novo produto</mat-card-title>
     <form class="form">
         <mat-form-field>
-            <input matInput placeholder="Nome" [(ngModel)]="product.Name" name="name">
+            <input matInput placeholder="Nome" [(ngModel)]="product.name" name="name">
         </mat-form-field>
         <mat-form-field>
-            <input matInput placeholder="Preço (MZN)" [(ngModel)]="product.Price" name="price">
+            <input matInput placeholder="Preço (MZN)" [(ngModel)]="product.price" name="price">
         </mat-form-field>
     </form>
     <button class="btnCadastrar" mat-raised-button (click)="createProduct()" color="primary">
